@@ -1,20 +1,20 @@
 //
-//  StoryVC.swift
+//  InfoVC.swift
 
 
 import Foundation
 import UIKit
 import SnapKit
 
-class StoryVC: UIViewController {
+class InfoVC: UIViewController {
     
     
-    var contentView: StoryView {
-        view as? StoryView ?? StoryView()
+    var contentView: InfoView {
+        view as? InfoView ?? InfoView()
     }
     
     override func loadView() {
-        view = StoryView()
+        view = InfoView()
     }
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		187145942C62454600C5AC90 /* Memory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187145932C62454500C5AC90 /* Memory.swift */; };
+		187145962C62455300C5AC90 /* Font + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187145952C62455300C5AC90 /* Font + Extension.swift */; };
+		187145982C62455C00C5AC90 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187145972C62455C00C5AC90 /* Settings.swift */; };
+		1871459A2C6261B900C5AC90 /* AchivCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187145992C6261B900C5AC90 /* AchivCell.swift */; };
+		1871459C2C62663200C5AC90 /* AchivHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1871459B2C62663200C5AC90 /* AchivHeader.swift */; };
+		1871459F2C626A2F00C5AC90 /* InfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1871459E2C626A2F00C5AC90 /* InfoVC.swift */; };
+		187145A12C626A3400C5AC90 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187145A02C626A3300C5AC90 /* InfoView.swift */; };
 		18DBB9922C610F0700726CFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DBB9912C610F0700726CFD /* AppDelegate.swift */; };
 		18DBB9942C610F0700726CFD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DBB9932C610F0700726CFD /* SceneDelegate.swift */; };
 		18DBB99B2C610F0900726CFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18DBB99A2C610F0900726CFD /* Assets.xcassets */; };
@@ -23,6 +30,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		187145932C62454500C5AC90 /* Memory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memory.swift; sourceTree = "<group>"; };
+		187145952C62455300C5AC90 /* Font + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font + Extension.swift"; sourceTree = "<group>"; };
+		187145972C62455C00C5AC90 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		187145992C6261B900C5AC90 /* AchivCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchivCell.swift; sourceTree = "<group>"; };
+		1871459B2C62663200C5AC90 /* AchivHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchivHeader.swift; sourceTree = "<group>"; };
+		1871459E2C626A2F00C5AC90 /* InfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoVC.swift; sourceTree = "<group>"; };
+		187145A02C626A3300C5AC90 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
 		18DBB98E2C610F0700726CFD /* legacyDance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = legacyDance.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18DBB9912C610F0700726CFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18DBB9932C610F0700726CFD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +65,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1871459D2C626A2500C5AC90 /* Info */ = {
+			isa = PBXGroup;
+			children = (
+				1871459E2C626A2F00C5AC90 /* InfoVC.swift */,
+				187145A02C626A3300C5AC90 /* InfoView.swift */,
+			);
+			path = Info;
+			sourceTree = "<group>";
+		};
 		18DBB9852C610F0600726CFD = {
 			isa = PBXGroup;
 			children = (
@@ -122,6 +145,9 @@
 			children = (
 				18DBB9B92C610F9B00726CFD /* ProfileVC.swift */,
 				18DBB9BB2C610F9E00726CFD /* ProfileView.swift */,
+				187145992C6261B900C5AC90 /* AchivCell.swift */,
+				1871459B2C62663200C5AC90 /* AchivHeader.swift */,
+				1871459D2C626A2500C5AC90 /* Info */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -138,6 +164,9 @@
 		18DBB9AB2C610F4E00726CFD /* Resourse */ = {
 			isa = PBXGroup;
 			children = (
+				187145952C62455300C5AC90 /* Font + Extension.swift */,
+				187145932C62454500C5AC90 /* Memory.swift */,
+				187145972C62455C00C5AC90 /* Settings.swift */,
 				18DBB9AC2C610F5900726CFD /* Fonts */,
 				18DBB99A2C610F0900726CFD /* Assets.xcassets */,
 			);
@@ -229,12 +258,19 @@
 			files = (
 				18DBB9922C610F0700726CFD /* AppDelegate.swift in Sources */,
 				18DBB9942C610F0700726CFD /* SceneDelegate.swift in Sources */,
+				187145982C62455C00C5AC90 /* Settings.swift in Sources */,
 				18DBB9BC2C610F9E00726CFD /* ProfileView.swift in Sources */,
+				187145A12C626A3400C5AC90 /* InfoView.swift in Sources */,
 				18DBB9AE2C610F7300726CFD /* StartVC.swift in Sources */,
+				1871459A2C6261B900C5AC90 /* AchivCell.swift in Sources */,
+				187145962C62455300C5AC90 /* Font + Extension.swift in Sources */,
 				18DBB9BA2C610F9B00726CFD /* ProfileVC.swift in Sources */,
+				187145942C62454600C5AC90 /* Memory.swift in Sources */,
 				18DBB9B62C610F9100726CFD /* StoryVC.swift in Sources */,
 				18DBB9B42C610F8800726CFD /* BaseView.swift in Sources */,
 				18DBB9B02C610F7700726CFD /* StartView.swift in Sources */,
+				1871459F2C626A2F00C5AC90 /* InfoVC.swift in Sources */,
+				1871459C2C62663200C5AC90 /* AchivHeader.swift in Sources */,
 				18DBB9B82C610F9500726CFD /* StoryView.swift in Sources */,
 				18DBB9B22C610F8500726CFD /* BaseVC.swift in Sources */,
 			);
