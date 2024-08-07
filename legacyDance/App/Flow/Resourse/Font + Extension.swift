@@ -7,12 +7,13 @@ import UIKit
 extension UIFont {
     
     enum CustomFonts: String {
-        case titilliumWeb = "TitilliumWeb"
+        case ubuntuMono = "UbuntuMono"
+        case unifrakturCook = "UnifrakturCook"
+        case mac = "MacondoSwashCaps"
     }
     
     enum CustomFontStyle: String {
         case regular = "-Regular"
-        case semiBold = "-SemiBold"
         case bold = "-Bold"
     }
     
@@ -34,7 +35,7 @@ extension UIFont {
 }
 
 extension UILabel {
-    static func createLabel(withText text: String, font: UIFont, textColor: UIColor, paragraphSpacing: CGFloat, lineHeightMultiple: CGFloat, textAlignment: NSTextAlignment = .center) -> UILabel {
+    static func createLabel(withText text: String, font: UIFont, textColor: UIColor, paragraphSpacing: CGFloat, lineHeightMultiple: CGFloat, kern: CGFloat, textAlignment: NSTextAlignment = .center) -> UILabel {
         let label = UILabel()
         label.numberOfLines = 0
         label.textAlignment = textAlignment
@@ -46,7 +47,8 @@ extension UILabel {
         let attributes: [NSAttributedString.Key: Any] = [
             .font: font,
             .foregroundColor: textColor,
-            .paragraphStyle: paragraphStyle
+            .paragraphStyle: paragraphStyle,
+            .kern: kern
         ]
         
         let attributedString = NSAttributedString(string: text, attributes: attributes)
@@ -57,15 +59,12 @@ extension UILabel {
 }
 
 extension UIButton {
-    func configureButton(withTitle title: String, font: UIFont, titleColor: UIColor, shadowOpacity: Float, shadowRadius: CGFloat, shadowOffset: CGSize, normalImage: UIImage?, highlightedImage: UIImage?) {
+    func configureButton(withTitle title: String, font: UIFont, titleColor: UIColor, normalImage: UIImage?, highlightedImage: UIImage?) {
         self.setBackgroundImage(normalImage, for: .normal)
         self.setBackgroundImage(highlightedImage, for: .highlighted)
         self.setTitle(title, for: .normal)
         self.titleLabel?.font = font
         self.setTitleColor(titleColor, for: .normal)
-        self.layer.shadowOpacity = shadowOpacity
-        self.layer.shadowRadius = shadowRadius
-        self.layer.shadowOffset = shadowOffset
         self.titleLabel?.lineBreakMode = .byWordWrapping
         self.titleLabel?.textAlignment = .center
 

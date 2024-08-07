@@ -27,6 +27,15 @@ class Memory {
           }
       }
     
+    var incorrectAnswer: Int {
+          get {
+              return defaults.integer(forKey: "incorrectAnswer", defaultValue: 0)
+          }
+          set {
+              defaults.set(newValue, forKey: "incorrectAnswer")
+          }
+      }
+    
     var completeTigerTrail: Bool {
         get {
             return defaults.bool(forKey: "completeTigerTrail")

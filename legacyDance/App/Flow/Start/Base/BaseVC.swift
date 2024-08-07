@@ -44,7 +44,7 @@ class BaseVC: UIViewController {
     }
     
     @objc func goStory() {
-        let vc = StoryVC()
+        let vc = StoryBiginningVC()
         navigationController?.pushViewController(vc, animated: true)
     }
 }
