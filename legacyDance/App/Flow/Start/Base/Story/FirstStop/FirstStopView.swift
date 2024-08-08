@@ -51,7 +51,7 @@ class FirstStopView: UIView {
     
     private (set) var btnGo: UIButton = {
         let btn = UIButton()
-        btn.configureButton(withTitle: "Accept the challenge", font: .customFont(font: .mac, style: .regular, size: 20), titleColor: .cDarkRed, normalImage: .imgBtnSelect, highlightedImage: .imgBtnSelect)
+        btn.configureButton(withTitle: "Accept the challenge", font: .customFont(font: .mac, style: .regular, size: 20), titleColor: .cDarkRed, normalImage: .imgBtnSelect, highlightedImage: nil)
         btn.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.6).cgColor
         btn.layer.shadowOpacity = 1
         btn.layer.shadowRadius = 8

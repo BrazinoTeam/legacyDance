@@ -32,7 +32,7 @@ class FindingTheThreeSymbolsVC: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         print("incorrectAnswer - \(Memory.shared.incorrectAnswer)")
-
+        clearBorderBtn()
     }
     
     private func selectBtn() {
@@ -45,6 +45,30 @@ class FindingTheThreeSymbolsVC: UIViewController {
         contentView.btnTwo.addTarget(self, action: #selector(selectButton(_:)), for: .touchUpInside)
         contentView.btnThree.addTarget(self, action: #selector(selectButton(_:)), for: .touchUpInside)
         contentView.btnFour.addTarget(self, action: #selector(selectButton(_:)), for: .touchUpInside)
+    }
+    
+    
+    private func clearBorderBtn() {
+        contentView.btnOne.layer.borderWidth = 0
+        contentView.btnOne.layer.borderColor = UIColor.clear.cgColor
+        contentView.btnOne.layer.cornerRadius = 32
+        contentView.btnOne.setBackgroundImage(.imgQuizBtnDef, for: .normal)
+        
+        contentView.btnTwo.layer.borderWidth = 0
+        contentView.btnTwo.layer.borderColor = UIColor.clear.cgColor
+        contentView.btnTwo.layer.cornerRadius = 32
+        contentView.btnTwo.setBackgroundImage(.imgQuizBtnDef, for: .normal)
+
+        contentView.btnThree.layer.borderWidth = 0
+        contentView.btnThree.layer.borderColor = UIColor.clear.cgColor
+        contentView.btnThree.layer.cornerRadius = 32
+        contentView.btnThree.setBackgroundImage(.imgQuizBtnDef, for: .normal)
+        
+        contentView.btnFour.layer.borderWidth = 0
+        contentView.btnFour.layer.borderColor = UIColor.clear.cgColor
+        contentView.btnFour.layer.cornerRadius = 32
+        contentView.btnFour.setBackgroundImage(.imgQuizBtnDef, for: .normal)
+
     }
     
     @objc func goNextChapter() {
@@ -69,6 +93,8 @@ class FindingTheThreeSymbolsVC: UIViewController {
     
     private func goNext() {
         print("Правильно")
+        let vc = CorrectAnswerVC()
+        navigationController?.pushViewController(vc, animated: true)
     }
     
     private func SorryYouLose() {

@@ -65,14 +65,15 @@ class FirstStopVC: UIViewController {
       }
     
     @objc func selectLeft() {
-          if countText > 0 {
-              countText -= 1
-              updateLabelAndText()
-              if countText < textArray.count - 1 {
-                  updateButtonsVisibility()
-              }
-          }
-      }
+        if countText > 0 {
+            countText -= 1
+            if countText < textArray.count - 1 {
+                isTrue = false
+            }
+            updateLabelAndText()
+            updateButtonsVisibility()
+        }
+    }
       
       @objc func selectRight() {
           if countText < textArray.count - 1 {

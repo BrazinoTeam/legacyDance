@@ -30,6 +30,10 @@
 		181EE6272C639C3400BAA9A8 /* TrialOfFearVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181EE6262C639C3400BAA9A8 /* TrialOfFearVC.swift */; };
 		181EE6292C639C3800BAA9A8 /* TrialOfFearView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181EE6282C639C3800BAA9A8 /* TrialOfFearView.swift */; };
 		181EE62B2C639EBB00BAA9A8 /* MacondoSwashCaps-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 181EE62A2C639EBB00BAA9A8 /* MacondoSwashCaps-Regular.ttf */; };
+		1828FAFE2C64D637009498EF /* MoveByFeelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1828FAFD2C64D637009498EF /* MoveByFeelVC.swift */; };
+		1828FB002C64D63B009498EF /* MoveByFeelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1828FAFF2C64D63B009498EF /* MoveByFeelView.swift */; };
+		1828FB022C64D640009498EF /* FollowTheLightVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1828FB012C64D640009498EF /* FollowTheLightVC.swift */; };
+		1828FB042C64D644009498EF /* FollowTheLightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1828FB032C64D644009498EF /* FollowTheLightView.swift */; };
 		187145942C62454600C5AC90 /* Memory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187145932C62454500C5AC90 /* Memory.swift */; };
 		187145962C62455300C5AC90 /* Font + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187145952C62455300C5AC90 /* Font + Extension.swift */; };
 		187145982C62455C00C5AC90 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187145972C62455C00C5AC90 /* Settings.swift */; };
@@ -37,6 +41,25 @@
 		1871459C2C62663200C5AC90 /* AchivHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1871459B2C62663200C5AC90 /* AchivHeader.swift */; };
 		1871459F2C626A2F00C5AC90 /* InfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1871459E2C626A2F00C5AC90 /* InfoVC.swift */; };
 		187145A12C626A3400C5AC90 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187145A02C626A3300C5AC90 /* InfoView.swift */; };
+		18D412C62C64D66E00BEA685 /* TrialOfDoubtVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D412C52C64D66E00BEA685 /* TrialOfDoubtVC.swift */; };
+		18D412C82C64D67200BEA685 /* TrialOfDoubtView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D412C72C64D67200BEA685 /* TrialOfDoubtView.swift */; };
+		18D412CA2C64D67800BEA685 /* MoveQuicklyAndDecisivelyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D412C92C64D67800BEA685 /* MoveQuicklyAndDecisivelyVC.swift */; };
+		18D412CC2C64D67C00BEA685 /* MoveQuicklyAndDecisivelyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D412CB2C64D67C00BEA685 /* MoveQuicklyAndDecisivelyView.swift */; };
+		18D412CE2C64D68300BEA685 /* MoveSlowlyAndCarefullyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D412CD2C64D68300BEA685 /* MoveSlowlyAndCarefullyVC.swift */; };
+		18D412D02C64D68700BEA685 /* MoveSlowlyAndCarefullyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D412CF2C64D68700BEA685 /* MoveSlowlyAndCarefullyView.swift */; };
+		18D412D22C64D68D00BEA685 /* TrialOfAngerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D412D12C64D68D00BEA685 /* TrialOfAngerVC.swift */; };
+		18D412D42C64D69100BEA685 /* TrialOfAngerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D412D32C64D69100BEA685 /* TrialOfAngerView.swift */; };
+		18D412D62C64D69800BEA685 /* SpeakPeacefullyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D412D52C64D69800BEA685 /* SpeakPeacefullyVC.swift */; };
+		18D412D82C64D69C00BEA685 /* SpeakPeacefullyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D412D72C64D69C00BEA685 /* SpeakPeacefullyView.swift */; };
+		18D412DA2C64D6A600BEA685 /* IgnoreTheProvocationsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D412D92C64D6A600BEA685 /* IgnoreTheProvocationsVC.swift */; };
+		18D412DC2C64D6AA00BEA685 /* IgnoreTheProvocationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D412DB2C64D6AA00BEA685 /* IgnoreTheProvocationsView.swift */; };
+		18D412DE2C64D6B000BEA685 /* TempleOfTheTigerSpiritVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D412DD2C64D6B000BEA685 /* TempleOfTheTigerSpiritVC.swift */; };
+		18D412E02C64D6B400BEA685 /* TempleOfTheTigerSpiritView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D412DF2C64D6B400BEA685 /* TempleOfTheTigerSpiritView.swift */; };
+		18D412E22C64E10500BEA685 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D412E12C64E10500BEA685 /* CircleView.swift */; };
+		18D412E82C64FF1100BEA685 /* FinalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D412E72C64FF1100BEA685 /* FinalVC.swift */; };
+		18D412EA2C64FF1500BEA685 /* FinalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D412E92C64FF1500BEA685 /* FinalView.swift */; };
+		18D412EC2C64FF1A00BEA685 /* ReturnToTheFestivalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D412EB2C64FF1A00BEA685 /* ReturnToTheFestivalVC.swift */; };
+		18D412EE2C64FF1F00BEA685 /* ReturnToTheFestivalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D412ED2C64FF1F00BEA685 /* ReturnToTheFestivalView.swift */; };
 		18DBB9922C610F0700726CFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DBB9912C610F0700726CFD /* AppDelegate.swift */; };
 		18DBB9942C610F0700726CFD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DBB9932C610F0700726CFD /* SceneDelegate.swift */; };
 		18DBB99B2C610F0900726CFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18DBB99A2C610F0900726CFD /* Assets.xcassets */; };
@@ -76,6 +99,10 @@
 		181EE6262C639C3400BAA9A8 /* TrialOfFearVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrialOfFearVC.swift; sourceTree = "<group>"; };
 		181EE6282C639C3800BAA9A8 /* TrialOfFearView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrialOfFearView.swift; sourceTree = "<group>"; };
 		181EE62A2C639EBB00BAA9A8 /* MacondoSwashCaps-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MacondoSwashCaps-Regular.ttf"; sourceTree = "<group>"; };
+		1828FAFD2C64D637009498EF /* MoveByFeelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveByFeelVC.swift; sourceTree = "<group>"; };
+		1828FAFF2C64D63B009498EF /* MoveByFeelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveByFeelView.swift; sourceTree = "<group>"; };
+		1828FB012C64D640009498EF /* FollowTheLightVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowTheLightVC.swift; sourceTree = "<group>"; };
+		1828FB032C64D644009498EF /* FollowTheLightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowTheLightView.swift; sourceTree = "<group>"; };
 		187145932C62454500C5AC90 /* Memory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memory.swift; sourceTree = "<group>"; };
 		187145952C62455300C5AC90 /* Font + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font + Extension.swift"; sourceTree = "<group>"; };
 		187145972C62455C00C5AC90 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
@@ -83,6 +110,25 @@
 		1871459B2C62663200C5AC90 /* AchivHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchivHeader.swift; sourceTree = "<group>"; };
 		1871459E2C626A2F00C5AC90 /* InfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoVC.swift; sourceTree = "<group>"; };
 		187145A02C626A3300C5AC90 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
+		18D412C52C64D66E00BEA685 /* TrialOfDoubtVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrialOfDoubtVC.swift; sourceTree = "<group>"; };
+		18D412C72C64D67200BEA685 /* TrialOfDoubtView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrialOfDoubtView.swift; sourceTree = "<group>"; };
+		18D412C92C64D67800BEA685 /* MoveQuicklyAndDecisivelyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveQuicklyAndDecisivelyVC.swift; sourceTree = "<group>"; };
+		18D412CB2C64D67C00BEA685 /* MoveQuicklyAndDecisivelyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveQuicklyAndDecisivelyView.swift; sourceTree = "<group>"; };
+		18D412CD2C64D68300BEA685 /* MoveSlowlyAndCarefullyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveSlowlyAndCarefullyVC.swift; sourceTree = "<group>"; };
+		18D412CF2C64D68700BEA685 /* MoveSlowlyAndCarefullyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveSlowlyAndCarefullyView.swift; sourceTree = "<group>"; };
+		18D412D12C64D68D00BEA685 /* TrialOfAngerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrialOfAngerVC.swift; sourceTree = "<group>"; };
+		18D412D32C64D69100BEA685 /* TrialOfAngerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrialOfAngerView.swift; sourceTree = "<group>"; };
+		18D412D52C64D69800BEA685 /* SpeakPeacefullyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakPeacefullyVC.swift; sourceTree = "<group>"; };
+		18D412D72C64D69C00BEA685 /* SpeakPeacefullyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakPeacefullyView.swift; sourceTree = "<group>"; };
+		18D412D92C64D6A600BEA685 /* IgnoreTheProvocationsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IgnoreTheProvocationsVC.swift; sourceTree = "<group>"; };
+		18D412DB2C64D6AA00BEA685 /* IgnoreTheProvocationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IgnoreTheProvocationsView.swift; sourceTree = "<group>"; };
+		18D412DD2C64D6B000BEA685 /* TempleOfTheTigerSpiritVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempleOfTheTigerSpiritVC.swift; sourceTree = "<group>"; };
+		18D412DF2C64D6B400BEA685 /* TempleOfTheTigerSpiritView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempleOfTheTigerSpiritView.swift; sourceTree = "<group>"; };
+		18D412E12C64E10500BEA685 /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
+		18D412E72C64FF1100BEA685 /* FinalVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalVC.swift; sourceTree = "<group>"; };
+		18D412E92C64FF1500BEA685 /* FinalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalView.swift; sourceTree = "<group>"; };
+		18D412EB2C64FF1A00BEA685 /* ReturnToTheFestivalVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReturnToTheFestivalVC.swift; sourceTree = "<group>"; };
+		18D412ED2C64FF1F00BEA685 /* ReturnToTheFestivalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReturnToTheFestivalView.swift; sourceTree = "<group>"; };
 		18DBB98E2C610F0700726CFD /* legacyDance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = legacyDance.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18DBB9912C610F0700726CFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18DBB9932C610F0700726CFD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -210,6 +256,88 @@
 			path = TrialOfFear;
 			sourceTree = "<group>";
 		};
+		1828FAF42C64D551009498EF /* MoveByFeel */ = {
+			isa = PBXGroup;
+			children = (
+				1828FAFD2C64D637009498EF /* MoveByFeelVC.swift */,
+				1828FAFF2C64D63B009498EF /* MoveByFeelView.swift */,
+			);
+			path = MoveByFeel;
+			sourceTree = "<group>";
+		};
+		1828FAF52C64D56A009498EF /* FollowTheLight */ = {
+			isa = PBXGroup;
+			children = (
+				1828FB012C64D640009498EF /* FollowTheLightVC.swift */,
+				1828FB032C64D644009498EF /* FollowTheLightView.swift */,
+			);
+			path = FollowTheLight;
+			sourceTree = "<group>";
+		};
+		1828FAF62C64D57B009498EF /* TrialOfDoubt */ = {
+			isa = PBXGroup;
+			children = (
+				18D412C52C64D66E00BEA685 /* TrialOfDoubtVC.swift */,
+				18D412C72C64D67200BEA685 /* TrialOfDoubtView.swift */,
+			);
+			path = TrialOfDoubt;
+			sourceTree = "<group>";
+		};
+		1828FAF72C64D58A009498EF /* MoveQuicklyAndDecisively */ = {
+			isa = PBXGroup;
+			children = (
+				18D412C92C64D67800BEA685 /* MoveQuicklyAndDecisivelyVC.swift */,
+				18D412CB2C64D67C00BEA685 /* MoveQuicklyAndDecisivelyView.swift */,
+			);
+			path = MoveQuicklyAndDecisively;
+			sourceTree = "<group>";
+		};
+		1828FAF82C64D59D009498EF /* MoveSlowlyAndCarefully */ = {
+			isa = PBXGroup;
+			children = (
+				18D412CD2C64D68300BEA685 /* MoveSlowlyAndCarefullyVC.swift */,
+				18D412CF2C64D68700BEA685 /* MoveSlowlyAndCarefullyView.swift */,
+			);
+			path = MoveSlowlyAndCarefully;
+			sourceTree = "<group>";
+		};
+		1828FAF92C64D5C0009498EF /* TrialOfAnger */ = {
+			isa = PBXGroup;
+			children = (
+				18D412D12C64D68D00BEA685 /* TrialOfAngerVC.swift */,
+				18D412D32C64D69100BEA685 /* TrialOfAngerView.swift */,
+			);
+			path = TrialOfAnger;
+			sourceTree = "<group>";
+		};
+		1828FAFA2C64D5D2009498EF /* SpeakPeacefully */ = {
+			isa = PBXGroup;
+			children = (
+				18D412D52C64D69800BEA685 /* SpeakPeacefullyVC.swift */,
+				18D412D72C64D69C00BEA685 /* SpeakPeacefullyView.swift */,
+			);
+			path = SpeakPeacefully;
+			sourceTree = "<group>";
+		};
+		1828FAFB2C64D5E4009498EF /* IgnoreTheProvocations */ = {
+			isa = PBXGroup;
+			children = (
+				18D412D92C64D6A600BEA685 /* IgnoreTheProvocationsVC.swift */,
+				18D412DB2C64D6AA00BEA685 /* IgnoreTheProvocationsView.swift */,
+			);
+			path = IgnoreTheProvocations;
+			sourceTree = "<group>";
+		};
+		1828FAFC2C64D5FD009498EF /* TempleOfTheTigerSpirit */ = {
+			isa = PBXGroup;
+			children = (
+				18D412DD2C64D6B000BEA685 /* TempleOfTheTigerSpiritVC.swift */,
+				18D412DF2C64D6B400BEA685 /* TempleOfTheTigerSpiritView.swift */,
+				18D412E12C64E10500BEA685 /* CircleView.swift */,
+			);
+			path = TempleOfTheTigerSpirit;
+			sourceTree = "<group>";
+		};
 		1871459D2C626A2500C5AC90 /* Info */ = {
 			isa = PBXGroup;
 			children = (
@@ -217,6 +345,24 @@
 				187145A02C626A3300C5AC90 /* InfoView.swift */,
 			);
 			path = Info;
+			sourceTree = "<group>";
+		};
+		18D412E32C64FEDA00BEA685 /* ReturnToTheFestival */ = {
+			isa = PBXGroup;
+			children = (
+				18D412EB2C64FF1A00BEA685 /* ReturnToTheFestivalVC.swift */,
+				18D412ED2C64FF1F00BEA685 /* ReturnToTheFestivalView.swift */,
+			);
+			path = ReturnToTheFestival;
+			sourceTree = "<group>";
+		};
+		18D412E42C64FEFF00BEA685 /* Final */ = {
+			isa = PBXGroup;
+			children = (
+				18D412E72C64FF1100BEA685 /* FinalVC.swift */,
+				18D412E92C64FF1500BEA685 /* FinalView.swift */,
+			);
+			path = Final;
 			sourceTree = "<group>";
 		};
 		18DBB9852C610F0600726CFD = {
@@ -300,6 +446,17 @@
 		18DBB9AA2C610F3100726CFD /* Story */ = {
 			isa = PBXGroup;
 			children = (
+				18D412E42C64FEFF00BEA685 /* Final */,
+				18D412E32C64FEDA00BEA685 /* ReturnToTheFestival */,
+				1828FAFC2C64D5FD009498EF /* TempleOfTheTigerSpirit */,
+				1828FAFB2C64D5E4009498EF /* IgnoreTheProvocations */,
+				1828FAFA2C64D5D2009498EF /* SpeakPeacefully */,
+				1828FAF92C64D5C0009498EF /* TrialOfAnger */,
+				1828FAF82C64D59D009498EF /* MoveSlowlyAndCarefully */,
+				1828FAF72C64D58A009498EF /* MoveQuicklyAndDecisively */,
+				1828FAF62C64D57B009498EF /* TrialOfDoubt */,
+				1828FAF52C64D56A009498EF /* FollowTheLight */,
+				1828FAF42C64D551009498EF /* MoveByFeel */,
 				181EE5FF2C6399EF00BAA9A8 /* TrialOfFear */,
 				181EE5FE2C6399D900BAA9A8 /* ValleyOfShadows */,
 				181EE5FD2C6399B600BAA9A8 /* MeetingTheGuardian */,
@@ -417,40 +574,63 @@
 			buildActionMask = 2147483647;
 			files = (
 				18DBB9922C610F0700726CFD /* AppDelegate.swift in Sources */,
+				18D412E02C64D6B400BEA685 /* TempleOfTheTigerSpiritView.swift in Sources */,
+				18D412D62C64D69800BEA685 /* SpeakPeacefullyVC.swift in Sources */,
 				181EE6252C639C2E00BAA9A8 /* ValleyOfShadowsView.swift in Sources */,
 				181EE6072C639BE400BAA9A8 /* ForestOfTrialsVC.swift in Sources */,
 				181EE6092C639BE800BAA9A8 /* ForestOfTrialsView.swift in Sources */,
 				181EE61F2C639C2100BAA9A8 /* MeetingTheGuardianVC.swift in Sources */,
+				18D412EC2C64FF1A00BEA685 /* ReturnToTheFestivalVC.swift in Sources */,
+				18D412D42C64D69100BEA685 /* TrialOfAngerView.swift in Sources */,
 				18DBB9942C610F0700726CFD /* SceneDelegate.swift in Sources */,
+				1828FB022C64D640009498EF /* FollowTheLightVC.swift in Sources */,
 				187145982C62455C00C5AC90 /* Settings.swift in Sources */,
 				18DBB9BC2C610F9E00726CFD /* ProfileView.swift in Sources */,
+				18D412CC2C64D67C00BEA685 /* MoveQuicklyAndDecisivelyView.swift in Sources */,
 				181EE6052C639BDE00BAA9A8 /* FirstStopView.swift in Sources */,
 				187145A12C626A3400C5AC90 /* InfoView.swift in Sources */,
 				181EE6032C639BDA00BAA9A8 /* FirstStopVC.swift in Sources */,
 				181EE61B2C639C1700BAA9A8 /* CorrectAnswerVC.swift in Sources */,
 				18DBB9AE2C610F7300726CFD /* StartVC.swift in Sources */,
 				1871459A2C6261B900C5AC90 /* AchivCell.swift in Sources */,
+				1828FAFE2C64D637009498EF /* MoveByFeelVC.swift in Sources */,
+				18D412DE2C64D6B000BEA685 /* TempleOfTheTigerSpiritVC.swift in Sources */,
+				1828FB042C64D644009498EF /* FollowTheLightView.swift in Sources */,
 				181EE6132C639C0200BAA9A8 /* FindingTheThreeSymbolsVC.swift in Sources */,
 				181EE6152C639C0700BAA9A8 /* FindingTheThreeSymbolsView.swift in Sources */,
 				187145962C62455300C5AC90 /* Font + Extension.swift in Sources */,
+				18D412CE2C64D68300BEA685 /* MoveSlowlyAndCarefullyVC.swift in Sources */,
+				18D412E82C64FF1100BEA685 /* FinalVC.swift in Sources */,
 				181EE6112C639BFD00BAA9A8 /* BuildARaftView.swift in Sources */,
+				18D412D82C64D69C00BEA685 /* SpeakPeacefullyView.swift in Sources */,
 				181EE6272C639C3400BAA9A8 /* TrialOfFearVC.swift in Sources */,
 				18DBB9BA2C610F9B00726CFD /* ProfileVC.swift in Sources */,
 				187145942C62454600C5AC90 /* Memory.swift in Sources */,
 				18DBB9B62C610F9100726CFD /* StoryBiginningVC.swift in Sources */,
+				18D412EA2C64FF1500BEA685 /* FinalView.swift in Sources */,
 				181EE6232C639C2A00BAA9A8 /* ValleyOfShadowsVC.swift in Sources */,
+				18D412CA2C64D67800BEA685 /* MoveQuicklyAndDecisivelyVC.swift in Sources */,
 				18DBB9B42C610F8800726CFD /* BaseView.swift in Sources */,
+				18D412DA2C64D6A600BEA685 /* IgnoreTheProvocationsVC.swift in Sources */,
 				18DBB9B02C610F7700726CFD /* StartView.swift in Sources */,
+				18D412C82C64D67200BEA685 /* TrialOfDoubtView.swift in Sources */,
 				181EE6212C639C2500BAA9A8 /* MeetingTheGuardianView.swift in Sources */,
 				1871459F2C626A2F00C5AC90 /* InfoVC.swift in Sources */,
+				18D412E22C64E10500BEA685 /* CircleView.swift in Sources */,
 				181EE61D2C639C1B00BAA9A8 /* CorrectAnswerView.swift in Sources */,
 				181EE60D2C639BF200BAA9A8 /* SwimAcrossTheRiverView.swift in Sources */,
 				181EE60B2C639BEE00BAA9A8 /* SwimAcrossTheRiverVC.swift in Sources */,
 				181EE60F2C639BF900BAA9A8 /* BuildARaftVC.swift in Sources */,
+				18D412D22C64D68D00BEA685 /* TrialOfAngerVC.swift in Sources */,
+				18D412EE2C64FF1F00BEA685 /* ReturnToTheFestivalView.swift in Sources */,
 				181EE6172C639C0D00BAA9A8 /* IncorrectAnswerVC.swift in Sources */,
+				18D412DC2C64D6AA00BEA685 /* IgnoreTheProvocationsView.swift in Sources */,
 				181EE6192C639C1100BAA9A8 /* IncorrectAnswerView.swift in Sources */,
+				18D412D02C64D68700BEA685 /* MoveSlowlyAndCarefullyView.swift in Sources */,
 				1871459C2C62663200C5AC90 /* AchivHeader.swift in Sources */,
+				18D412C62C64D66E00BEA685 /* TrialOfDoubtVC.swift in Sources */,
 				18DBB9B82C610F9500726CFD /* StoryBiginningView.swift in Sources */,
+				1828FB002C64D63B009498EF /* MoveByFeelView.swift in Sources */,
 				181EE6292C639C3800BAA9A8 /* TrialOfFearView.swift in Sources */,
 				18DBB9B22C610F8500726CFD /* BaseVC.swift in Sources */,
 			);

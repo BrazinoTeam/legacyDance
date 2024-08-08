@@ -102,7 +102,7 @@ class FindingTheThreeSymbolsView: UIView {
     
     private (set) var btnAnswer: UIButton = {
         let btn = UIButton()
-        btn.configureButton(withTitle: "Answer", font: .customFont(font: .mac, style: .regular, size: 20), titleColor: .cDarkRed, normalImage: .imgBtnSelect, highlightedImage: .imgBtnSelect)
+        btn.configureButton(withTitle: "Answer", font: .customFont(font: .mac, style: .regular, size: 20), titleColor: .cDarkRed, normalImage: .imgBtnSelect, highlightedImage: nil)
         btn.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.6).cgColor
         btn.layer.shadowOpacity = 1
         btn.layer.shadowRadius = 8
@@ -125,10 +125,9 @@ class FindingTheThreeSymbolsView: UIView {
     
     private func setupUI() {
         
-        [backgrounds, btnBack, btnAnswer,labelContainer, btnLeft, btnRight, btnFour, btnThree, btnTwo, btnOne /*labelQuizCont*/] .forEach(addSubview(_:))
+        [backgrounds, btnBack, btnAnswer,labelContainer, btnLeft, btnRight, btnFour, btnThree, btnTwo, btnOne ] .forEach(addSubview(_:))
         labelContainer.addSubview(numberLabel)
         labelContainer.addSubview(contentLabel)
-//        labelQuizCont.addSubview(labelQuiz)
     }
     
     private func setupConstraints() {
@@ -167,17 +166,6 @@ class FindingTheThreeSymbolsView: UIView {
             make.bottom.equalTo(btnThree.snp.top).offset(-8)
             make.right.equalTo(btnAnswer.snp.centerX).offset(-4)
         }
-        
-//        labelQuizCont.snp.makeConstraints { make in
-//            make.left.right.equalToSuperview().inset(16)
-//            make.bottom.equalTo(btnAnswer.snp.top).offset(-168)
-//            make.height.equalTo(144)
-//        }
-//        
-//        labelQuiz.snp.makeConstraints { make in
-//            make.top.equalToSuperview().offset(16)
-//            make.left.right.equalToSuperview().inset(24)
-//        }
         
         labelContainer.snp.makeConstraints { make in
             make.left.right.equalToSuperview().inset(16)

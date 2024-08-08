@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "pikaso_texttoimage_Ghost-Tiger-in-the-Valley-of-Shadows-The-Valley-of 1.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "pikaso_texttoimage_Ghost-Tiger-in-the-Valley-of-Shadows-The-Valley-of 1 (1).png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "pikaso_texttoimage_Ghost-Tiger-in-the-Valley-of-Shadows-The-Valley-of 1 (2).png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
