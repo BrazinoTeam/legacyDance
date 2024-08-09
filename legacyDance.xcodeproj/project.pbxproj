@@ -41,6 +41,9 @@
 		1871459C2C62663200C5AC90 /* AchivHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1871459B2C62663200C5AC90 /* AchivHeader.swift */; };
 		1871459F2C626A2F00C5AC90 /* InfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1871459E2C626A2F00C5AC90 /* InfoVC.swift */; };
 		187145A12C626A3400C5AC90 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187145A02C626A3300C5AC90 /* InfoView.swift */; };
+		1881F91F2C66327200AAC0CA /* StartScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1881F91E2C66327200AAC0CA /* StartScreen.swift */; };
+		1881F9212C66327900AAC0CA /* StartScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1881F9202C66327900AAC0CA /* StartScreenViewModel.swift */; };
+		1881F9232C66328400AAC0CA /* ProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1881F9222C66328400AAC0CA /* ProgressBarView.swift */; };
 		18D412C62C64D66E00BEA685 /* TrialOfDoubtVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D412C52C64D66E00BEA685 /* TrialOfDoubtVC.swift */; };
 		18D412C82C64D67200BEA685 /* TrialOfDoubtView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D412C72C64D67200BEA685 /* TrialOfDoubtView.swift */; };
 		18D412CA2C64D67800BEA685 /* MoveQuicklyAndDecisivelyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D412C92C64D67800BEA685 /* MoveQuicklyAndDecisivelyVC.swift */; };
@@ -110,6 +113,9 @@
 		1871459B2C62663200C5AC90 /* AchivHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchivHeader.swift; sourceTree = "<group>"; };
 		1871459E2C626A2F00C5AC90 /* InfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoVC.swift; sourceTree = "<group>"; };
 		187145A02C626A3300C5AC90 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
+		1881F91E2C66327200AAC0CA /* StartScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScreen.swift; sourceTree = "<group>"; };
+		1881F9202C66327900AAC0CA /* StartScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScreenViewModel.swift; sourceTree = "<group>"; };
+		1881F9222C66328400AAC0CA /* ProgressBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBarView.swift; sourceTree = "<group>"; };
 		18D412C52C64D66E00BEA685 /* TrialOfDoubtVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrialOfDoubtVC.swift; sourceTree = "<group>"; };
 		18D412C72C64D67200BEA685 /* TrialOfDoubtView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrialOfDoubtView.swift; sourceTree = "<group>"; };
 		18D412C92C64D67800BEA685 /* MoveQuicklyAndDecisivelyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveQuicklyAndDecisivelyVC.swift; sourceTree = "<group>"; };
@@ -415,6 +421,9 @@
 			children = (
 				18DBB9AD2C610F7300726CFD /* StartVC.swift */,
 				18DBB9AF2C610F7700726CFD /* StartView.swift */,
+				1881F91E2C66327200AAC0CA /* StartScreen.swift */,
+				1881F9202C66327900AAC0CA /* StartScreenViewModel.swift */,
+				1881F9222C66328400AAC0CA /* ProgressBarView.swift */,
 				18DBB9A82C610F2800726CFD /* Base */,
 			);
 			path = Start;
@@ -592,11 +601,13 @@
 				181EE6032C639BDA00BAA9A8 /* FirstStopVC.swift in Sources */,
 				181EE61B2C639C1700BAA9A8 /* CorrectAnswerVC.swift in Sources */,
 				18DBB9AE2C610F7300726CFD /* StartVC.swift in Sources */,
+				1881F91F2C66327200AAC0CA /* StartScreen.swift in Sources */,
 				1871459A2C6261B900C5AC90 /* AchivCell.swift in Sources */,
 				1828FAFE2C64D637009498EF /* MoveByFeelVC.swift in Sources */,
 				18D412DE2C64D6B000BEA685 /* TempleOfTheTigerSpiritVC.swift in Sources */,
 				1828FB042C64D644009498EF /* FollowTheLightView.swift in Sources */,
 				181EE6132C639C0200BAA9A8 /* FindingTheThreeSymbolsVC.swift in Sources */,
+				1881F9212C66327900AAC0CA /* StartScreenViewModel.swift in Sources */,
 				181EE6152C639C0700BAA9A8 /* FindingTheThreeSymbolsView.swift in Sources */,
 				187145962C62455300C5AC90 /* Font + Extension.swift in Sources */,
 				18D412CE2C64D68300BEA685 /* MoveSlowlyAndCarefullyVC.swift in Sources */,
@@ -626,6 +637,7 @@
 				181EE6172C639C0D00BAA9A8 /* IncorrectAnswerVC.swift in Sources */,
 				18D412DC2C64D6AA00BEA685 /* IgnoreTheProvocationsView.swift in Sources */,
 				181EE6192C639C1100BAA9A8 /* IncorrectAnswerView.swift in Sources */,
+				1881F9232C66328400AAC0CA /* ProgressBarView.swift in Sources */,
 				18D412D02C64D68700BEA685 /* MoveSlowlyAndCarefullyView.swift in Sources */,
 				1871459C2C62663200C5AC90 /* AchivHeader.swift in Sources */,
 				18D412C62C64D66E00BEA685 /* TrialOfDoubtVC.swift in Sources */,
@@ -778,6 +790,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = legacyDance/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app needs a camera so that the user can take profile pictures";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "This app requires a camera so that the user can take a profile photo from the library";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -808,6 +822,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = legacyDance/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app needs a camera so that the user can take profile pictures";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "This app requires a camera so that the user can take a profile photo from the library";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";

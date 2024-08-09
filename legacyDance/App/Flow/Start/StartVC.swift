@@ -1,36 +1,40 @@
 //
 //  StartVC.swift
 
-
+import Combine
 import Foundation
 import UIKit
 import SnapKit
+import SwiftUI
 
 class StartVC: UIViewController {
     
-
-    var contentView: StartView {
-        view as? StartView ?? StartView()
-    }
     
-    override func loadView() {
-        view = StartView()
-    }
+    private var loadignViewModel: StartViewModel = StartViewModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        contentView.layoutIfNeeded()
+        let loadingScreen = StartScreen(loadignViewModel: loadignViewModel)
+        let hostingController = UIHostingController(rootView: loadingScreen)
+        addChild(hostingController)
+        hostingController.view.frame = self.view.frame
+        self.view.addSubview(hostingController.view)
+        hostingController.didMove(toParent: self)
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
         animateProgressBar()
     }
     
     func animateProgressBar() {
-        UIView.animate(withDuration: 1.5) {
-            self.contentView.progressView.setProgress(1.0, animated: true)
+        DispatchQueue.main.async {
+            self.loadignViewModel.isAnimating = true
         }
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
-                  self.goToBase()
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+            self.goToBase()
+        }
     }
-}
-    
+  
     func goToBase() {
          
                     let vc = BaseVC()
@@ -39,4 +43,7 @@ class StartVC: UIViewController {
                     present(navigationController, animated: true)
                     navigationController.setNavigationBarHidden(true, animated: false)
             }
-    }
+}
+
+    
+   

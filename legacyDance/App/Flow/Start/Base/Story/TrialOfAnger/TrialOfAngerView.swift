@@ -29,7 +29,7 @@ class TrialOfAngerView: UIView {
     }()
     
     private (set) var contentLabel: UILabel = {
-        let label = UILabel.createLabel(withText: "   The third trial was to overcome anger. Zheng found himself in an arena surrounded by belligerent spirits trying to provoke him and throw him off course. He needed to remain calm and not give in to provocations.", font: .customFont(font: .ubuntuMono, style: .regular, size: 16), textColor: .white, paragraphSpacing: 1, lineHeightMultiple: 1.4, kern: 0.64)
+        let label = UILabel.createLabel(withText: "   The third trial was to overcome anger. Zheng found himself in an arena surrounded by belligerent spirits trying to provoke him and throw him off course. He needed to remain calm and not give in to provocations.", font: .customFont(font: .ubuntuMono, style: .regular, size: Int(16.autoSize)), textColor: .white, paragraphSpacing: 1, lineHeightMultiple: 1.4, kern: 0.64)
         return label
     }()
     
@@ -79,7 +79,7 @@ class TrialOfAngerView: UIView {
         
         btnBack.snp.makeConstraints { make in
             make.left.equalToSuperview().offset(24)
-            make.top.equalTo(safeAreaLayoutGuide.snp.top).offset(24)
+            make.top.equalTo(safeAreaLayoutGuide.snp.top)
             make.size.equalTo(52)
         }
         
@@ -97,8 +97,8 @@ class TrialOfAngerView: UIView {
         
         labelContainer.snp.makeConstraints { make in
             make.left.right.equalToSuperview().inset(16)
-            make.bottom.equalTo(btnIgnore.snp.top).offset(-16)
-            labelContainerHeightConstraint = make.height.equalTo(186).constraint
+            make.bottom.equalTo(btnIgnore.snp.top).offset(-16.autoSize)
+            labelContainerHeightConstraint = make.height.equalTo(186.autoSize).constraint
         }
         
         contentLabel.snp.makeConstraints { make in

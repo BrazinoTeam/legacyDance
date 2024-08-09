@@ -10,7 +10,7 @@ class ReturnToTheFestivalView: UIView {
     
     private (set) var backgrounds: UIImageView = {
         let iv = UIImageView()
-        iv.image = .imgStory01
+        iv.image = .imgStory27
         iv.contentMode = .scaleToFill
         return iv
     }()
@@ -28,7 +28,7 @@ class ReturnToTheFestivalView: UIView {
     }()
     
     private (set) var contentLabel: UILabel = {
-        let label = UILabel.createLabel(withText: "   With the blessing of the tiger spirit, Zheng returned to the festival in Chengdu. He was full of confidence and strength, ready to perform the Tiger Dance. The crowd gathered around the stage, eagerly awaiting his performance.", font: .customFont(font: .ubuntuMono, style: .regular, size: 16), textColor: .white, paragraphSpacing: 1, lineHeightMultiple: 1.4, kern: 0.64)
+        let label = UILabel.createLabel(withText: "   With the blessing of the tiger spirit, Zheng returned to the festival in Chengdu. He was full of confidence and strength, ready to perform the Tiger Dance. The crowd gathered around the stage, eagerly awaiting his performance.", font: .customFont(font: .ubuntuMono, style: .regular, size: Int(16.autoSize)), textColor: .white, paragraphSpacing: 1, lineHeightMultiple: 1.4, kern: 0.64)
         return label
     }()
     
@@ -68,7 +68,7 @@ class ReturnToTheFestivalView: UIView {
         
         btnBack.snp.makeConstraints { make in
             make.left.equalToSuperview().offset(24)
-            make.top.equalTo(safeAreaLayoutGuide.snp.top).offset(24)
+            make.top.equalTo(safeAreaLayoutGuide.snp.top)
             make.size.equalTo(52)
         }
         
@@ -80,8 +80,8 @@ class ReturnToTheFestivalView: UIView {
         
         labelContainer.snp.makeConstraints { make in
             make.left.right.equalToSuperview().inset(16)
-            make.bottom.equalTo(btnGo.snp.top).offset(-16)
-            labelContainerHeightConstraint = make.height.equalTo(190).constraint
+            make.bottom.equalTo(btnGo.snp.top).offset(-16.autoSize)
+            labelContainerHeightConstraint = make.height.equalTo(190.autoSize).constraint
         }
         
         contentLabel.snp.makeConstraints { make in

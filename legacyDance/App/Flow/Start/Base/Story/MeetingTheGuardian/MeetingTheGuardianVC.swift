@@ -52,9 +52,9 @@ class MeetingTheGuardianVC: UIViewController {
         contentView.backgrounds.image = imageArray[countText]
         switch countText {
                case 0:
-                   contentView.labelContainerHeightConstraint?.update(offset: 232)
+                   contentView.labelContainerHeightConstraint?.update(offset: 232.autoSize)
                case 1:
-                   contentView.labelContainerHeightConstraint?.update(offset: 166)
+                   contentView.labelContainerHeightConstraint?.update(offset: 166.autoSize)
                default:
                    break
                }

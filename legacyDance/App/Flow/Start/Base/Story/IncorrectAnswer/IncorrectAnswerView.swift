@@ -68,7 +68,7 @@ class IncorrectAnswerView: UIView {
         
         btnBack.snp.makeConstraints { make in
             make.left.equalToSuperview().offset(24)
-            make.top.equalTo(safeAreaLayoutGuide.snp.top).offset(24)
+            make.top.equalTo(safeAreaLayoutGuide.snp.top)
             make.size.equalTo(52)
         }
         

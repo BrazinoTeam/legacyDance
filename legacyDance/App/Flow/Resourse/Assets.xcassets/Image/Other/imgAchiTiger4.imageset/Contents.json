@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "Achiv neon blue.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "Achiv neon blue (1).png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "Achiv neon blue (2).png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

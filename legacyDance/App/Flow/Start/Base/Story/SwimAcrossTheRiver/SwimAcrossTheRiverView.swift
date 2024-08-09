@@ -27,7 +27,7 @@ class SwimAcrossTheRiverView: UIView {
     }()
     
     private (set) var contentLabel: UILabel = {
-        let label = UILabel.createLabel(withText: "   Zheng decided to swim across the river. The current was too strong, and despite his best efforts, he couldn't overcome the powerful flow. Exhausted and unable to proceed, Zheng realized that this was the end of his journey.", font: .customFont(font: .ubuntuMono, style: .regular, size: 16), textColor: .white, paragraphSpacing: 1, lineHeightMultiple: 1.4, kern: 0.64)
+        let label = UILabel.createLabel(withText: "   Zheng decided to swim across the river. The current was too strong, and despite his best efforts, he couldn't overcome the powerful flow. Exhausted and unable to proceed, Zheng realized that this was the end of his journey.", font: .customFont(font: .ubuntuMono, style: .regular, size: Int(16.autoSize)), textColor: .white, paragraphSpacing: 1, lineHeightMultiple: 1.4, kern: 0.64)
         return label
     }()
     
@@ -67,7 +67,7 @@ class SwimAcrossTheRiverView: UIView {
         
         btnBack.snp.makeConstraints { make in
             make.left.equalToSuperview().offset(24)
-            make.top.equalTo(safeAreaLayoutGuide.snp.top).offset(24)
+            make.top.equalTo(safeAreaLayoutGuide.snp.top)
             make.size.equalTo(52)
         }
         
@@ -79,8 +79,8 @@ class SwimAcrossTheRiverView: UIView {
         
         labelContainer.snp.makeConstraints { make in
             make.left.right.equalToSuperview().inset(16)
-            make.bottom.equalTo(btnHome.snp.top).offset(-16)
-            labelContainerHeightConstraint = make.height.equalTo(190).constraint
+            make.bottom.equalTo(btnHome.snp.top).offset(-16.autoSize)
+            labelContainerHeightConstraint = make.height.equalTo(190.autoSize).constraint
         }
         
         contentLabel.snp.makeConstraints { make in

@@ -134,13 +134,13 @@ class FindingTheThreeSymbolsVC: UIViewController {
         contentView.backgrounds.image = imageArray[countText]
         switch countText {
                case 0:
-                   contentView.labelContainerHeightConstraint?.update(offset: 166)
-                   contentView.labelContainerBottomConstraint?.update(offset: -16)
+                   contentView.labelContainerHeightConstraint?.update(offset: 166.autoSize)
+                   contentView.labelContainerBottomConstraint?.update(offset: -16.autoSize)
                case 1:
-                   contentView.labelContainerHeightConstraint?.update(offset: 144)
-                   contentView.labelContainerBottomConstraint?.update(offset: -16)
+                   contentView.labelContainerHeightConstraint?.update(offset: 144.autoSize)
+                   contentView.labelContainerBottomConstraint?.update(offset: -16.autoSize)
                case 2:
-                   contentView.labelContainerHeightConstraint?.update(offset: 144)
+                   contentView.labelContainerHeightConstraint?.update(offset: 144.autoSize)
                    contentView.labelContainerBottomConstraint?.update(offset: -168)
                default:
                    break
@@ -153,8 +153,6 @@ class FindingTheThreeSymbolsVC: UIViewController {
         contentView.btnTwo.isHidden = !isTrue
         contentView.btnThree.isHidden = !isTrue
         contentView.btnFour.isHidden = !isTrue
-        contentView.labelQuizCont.isHidden = !isTrue
-        contentView.labelQuiz.isHidden = !isTrue
     }
     
     @objc func selectLeft() {
@@ -196,8 +194,8 @@ class FindingTheThreeSymbolsVC: UIViewController {
     
             let titleLabel = UILabel()
                 titleLabel.text = "Unfortunately,"
-                titleLabel.font = .customFont(font: .mac, style: .regular, size: 48)
-                titleLabel.textColor = .yellow
+                titleLabel.font = .customFont(font: .mac, style: .regular, size: 32)
+                titleLabel.textColor = .cYellow
                 titleLabel.numberOfLines = 0
                 titleLabel.textAlignment = .center
                 viewConteiner.addSubview(titleLabel)
@@ -207,6 +205,7 @@ class FindingTheThreeSymbolsVC: UIViewController {
                 subtitleLabelView.font = .customFont(font: .ubuntuMono, style: .regular, size: 14)
                 subtitleLabelView.numberOfLines = 0
                 subtitleLabelView.textAlignment = .center
+                subtitleLabelView.textColor = .white
                 viewConteiner.addSubview(subtitleLabelView)
 
             
@@ -222,8 +221,8 @@ class FindingTheThreeSymbolsVC: UIViewController {
             viewConteiner.snp.makeConstraints { make in
                 make.centerX.equalToSuperview()
                 make.centerY.equalToSuperview().offset(40.autoSize)
-                make.height.equalTo(392)
-                make.width.equalTo(496)
+                make.height.equalTo(328)
+                make.width.equalTo(353)
             }
     
             bgImage.snp.makeConstraints { make in
@@ -232,18 +231,18 @@ class FindingTheThreeSymbolsVC: UIViewController {
                 
             titleLabel.snp.makeConstraints { make in
                 make.centerX.equalToSuperview()
-                make.top.equalToSuperview().offset(132)
+                make.top.equalToSuperview().offset(82)
             }
                 
             subtitleLabelView.snp.makeConstraints { make in
                 make.centerX.equalToSuperview()
-                make.width.equalTo(300)
-                make.top.equalTo(titleLabel.snp.bottom).offset(8)
+                make.width.equalTo(208)
+                make.top.equalTo(titleLabel.snp.bottom).offset(4)
             }
 
             backButton.snp.makeConstraints { make in
                 make.top.equalTo(subtitleLabelView.snp.bottom).offset(24)
-                make.width.equalTo(240)
+                make.width.equalTo(176)
                 make.height.equalTo(64)
                 make.centerX.equalToSuperview()
                 }

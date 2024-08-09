@@ -29,7 +29,7 @@ class TrialOfFearView: UIView {
     }()
     
     private (set) var contentLabel: UILabel = {
-        let label = UILabel.createLabel(withText: "   The first trial was to overcome fear. Zheng found himself in a dark cave surrounded by ghosts and illusions. He had to find the exit without succumbing to panic.", font: .customFont(font: .ubuntuMono, style: .regular, size: 16), textColor: .white, paragraphSpacing: 1, lineHeightMultiple: 1.4, kern: 0.64)
+        let label = UILabel.createLabel(withText: "   The first trial was to overcome fear. Zheng found himself in a dark cave surrounded by ghosts and illusions. He had to find the exit without succumbing to panic.", font: .customFont(font: .ubuntuMono, style: .regular, size: Int(16.autoSize)), textColor: .white, paragraphSpacing: 1, lineHeightMultiple: 1.4, kern: 0.64)
         return label
     }()
     
@@ -79,7 +79,7 @@ class TrialOfFearView: UIView {
         
         btnBack.snp.makeConstraints { make in
             make.left.equalToSuperview().offset(24)
-            make.top.equalTo(safeAreaLayoutGuide.snp.top).offset(24)
+            make.top.equalTo(safeAreaLayoutGuide.snp.top)
             make.size.equalTo(52)
         }
         
@@ -97,8 +97,8 @@ class TrialOfFearView: UIView {
         
         labelContainer.snp.makeConstraints { make in
             make.left.right.equalToSuperview().inset(16)
-            make.bottom.equalTo(btnFollow.snp.top).offset(-16)
-            labelContainerHeightConstraint = make.height.equalTo(146).constraint
+            make.bottom.equalTo(btnFollow.snp.top).offset(-16.autoSize)
+            labelContainerHeightConstraint = make.height.equalTo(146.autoSize).constraint
         }
         
         contentLabel.snp.makeConstraints { make in

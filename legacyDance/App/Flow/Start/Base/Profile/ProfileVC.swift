@@ -15,7 +15,7 @@ class ProfileVC: UIViewController, MFMailComposeViewControllerDelegate {
     private let ud = Memory.shared
     private var isTextFieldTapped = false
 
-    private let images: [UIImage] = [.imgGod1, .imgGod2, .imgGod3, .imgGod4, .imgGod5, .imgGod6, .imgGod7, .imgGod8, .imgGod9, .imgGod10]
+    private let images: [UIImage] = [.imgAchiTiger1, .imgAchiTiger2, .imgAchiTiger3, .imgAchiTiger4, .imgAchiTiger5, .imgAchiTiger6, .imgAchiTiger7, .imgAchiTiger8, .imgAchiTiger9, .imgAchiTiger10]
     private let titles: [String] = ["First Step", "Mountain Climber", "Raft Builder", "Symbol Finder", "Riddle Master", "Guardian's Challenge", "Fear Conqueror", "Doubt Destroyer", "Anger Manager", "Temple Visitor"]
     private let subtitles: [String] = ["Complete the first story chapter", "Reach the peak of Longshan Mountains", "Successfully build a raft to cross the river", "Find all three hidden tiger symbols", "Solve the riddle on the cliff", "Meet the guardian of the tiger's spirit", "Overcome the Trial of Fear", "Overcome the Trial of Doubt", "Overcome the Trial of Anger", "Reach the Temple of the Tiger Spirit"]
 
@@ -27,6 +27,7 @@ class ProfileVC: UIViewController, MFMailComposeViewControllerDelegate {
     override func loadView() {
         view = ProfileView()
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         pickerDelegate()
@@ -46,6 +47,7 @@ class ProfileVC: UIViewController, MFMailComposeViewControllerDelegate {
         contentView.btnWriteUS.addTarget(self, action: #selector(tappedWriteUs), for: .touchUpInside)
         contentView.btnUserPhoto.addTarget(self, action: #selector(takePhotoUser), for: .touchUpInside)
         contentView.btnInfo.addTarget(self, action: #selector(goInfo), for: .touchUpInside)
+        contentView.editBtn.addTarget(self, action: #selector(tappeUpdateName), for: .touchUpInside)
 
     }
     
@@ -53,8 +55,24 @@ class ProfileVC: UIViewController, MFMailComposeViewControllerDelegate {
         if let savedImage = getImageFromLocal() {
             print("Изображение успешно загружено")
             contentView.btnUserPhoto.setImage(savedImage, for: .normal)
+            contentView.btnUserPhoto.layer.borderWidth = 2
+            contentView.btnUserPhoto.layer.borderColor = UIColor.cYellow.cgColor
+            contentView.btnUserPhoto.layer.cornerRadius = 8
+            contentView.btnUserPhoto.clipsToBounds = true
         } else {
             print("Изображение не найдено в локальном хранилище")
+        }
+    }
+    
+    @objc func tappeUpdateName() {
+        if contentView.editBtn.backgroundImage(for: .normal) == UIImage(named: "doneBtn") {
+            view.endEditing(true)
+            isTextFieldTapped = false
+            contentView.editBtn.setBackgroundImage(UIImage(named: "editBtn"), for: .normal)
+        } else {
+            contentView.profileTextField.becomeFirstResponder()
+            contentView.editBtn.setBackgroundImage(UIImage(named: "doneBtn"), for: .normal)
+            isTextFieldTapped = true
         }
     }
     
@@ -150,7 +168,8 @@ extension ProfileVC: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 100
+        return 104
+        
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
@@ -158,7 +177,7 @@ extension ProfileVC: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 34
+        return 58
     }
 }
 

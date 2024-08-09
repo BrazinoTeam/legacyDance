@@ -45,7 +45,7 @@ class FindingTheThreeSymbolsView: UIView {
     }()
     
     private (set) var contentLabel: UILabel = {
-        let label = UILabel.createLabel(withText: "In moder", font: .customFont(font: .ubuntuMono, style: .regular, size: 16), textColor: .white, paragraphSpacing: 1, lineHeightMultiple: 1.4, kern: 0.64)
+        let label = UILabel.createLabel(withText: "In moder", font: .customFont(font: .ubuntuMono, style: .regular, size: Int(16.autoSize)), textColor: .white, paragraphSpacing: 1, lineHeightMultiple: 1.4, kern: 0.64)
         return label
     }()
     
@@ -88,18 +88,7 @@ class FindingTheThreeSymbolsView: UIView {
         btn.layer.shadowOffset = CGSize(width: 0, height: 8)
         return btn
     }()
-    
-    private (set) var labelQuizCont: UIImageView = {
-        let imageView = UIImageView()
-        imageView.image = .imgContLabel
-        return imageView
-    }()
-    
-    private (set) var labelQuiz: UILabel = {
-        let label = UILabel.createLabel(withText: "   The third symbol was on a cliff, accessible only by solving a riddle: What grows when it drinks, and dies when it eats?", font: .customFont(font: .ubuntuMono, style: .regular, size: 14), textColor: .white, paragraphSpacing: 1, lineHeightMultiple: 1.07, kern: 1)
-        return label
-    }()
-    
+
     private (set) var btnAnswer: UIButton = {
         let btn = UIButton()
         btn.configureButton(withTitle: "Answer", font: .customFont(font: .mac, style: .regular, size: 20), titleColor: .cDarkRed, normalImage: .imgBtnSelect, highlightedImage: nil)
@@ -137,7 +126,7 @@ class FindingTheThreeSymbolsView: UIView {
         
         btnBack.snp.makeConstraints { make in
             make.left.equalToSuperview().offset(24)
-            make.top.equalTo(safeAreaLayoutGuide.snp.top).offset(24)
+            make.top.equalTo(safeAreaLayoutGuide.snp.top)
             make.size.equalTo(52)
         }
         
@@ -169,8 +158,8 @@ class FindingTheThreeSymbolsView: UIView {
         
         labelContainer.snp.makeConstraints { make in
             make.left.right.equalToSuperview().inset(16)
-            labelContainerBottomConstraint = make.bottom.equalTo(btnAnswer.snp.top).offset(-16).constraint
-            labelContainerHeightConstraint = make.height.equalTo(276).constraint
+            labelContainerBottomConstraint = make.bottom.equalTo(btnAnswer.snp.top).offset(-16.autoSize).constraint
+            labelContainerHeightConstraint = make.height.equalTo(276.autoSize).constraint
         }
         
         numberLabel.snp.makeConstraints { make in

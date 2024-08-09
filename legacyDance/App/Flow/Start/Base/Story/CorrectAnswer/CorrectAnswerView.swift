@@ -28,7 +28,7 @@ class CorrectAnswerView: UIView {
     }()
     
     private (set) var contentLabel: UILabel = {
-        let label = UILabel.createLabel(withText: "   You chose the correct answer: Fire. The cliff shifted, revealing the path to the third symbol. Now Zheng had all three symbols, and he could continue his journey to the mountain's peak.", font: .customFont(font: .ubuntuMono, style: .regular, size: 16), textColor: .white, paragraphSpacing: 1, lineHeightMultiple: 1.4, kern: 0.64)
+        let label = UILabel.createLabel(withText: "   You chose the correct answer: Fire. The cliff shifted, revealing the path to the third symbol. Now Zheng had all three symbols, and he could continue his journey to the mountain's peak.", font: .customFont(font: .ubuntuMono, style: .regular, size: Int(16.autoSize)), textColor: .white, paragraphSpacing: 1, lineHeightMultiple: 1.4, kern: 0.64)
         return label
     }()
     
@@ -68,7 +68,7 @@ class CorrectAnswerView: UIView {
         
         btnBack.snp.makeConstraints { make in
             make.left.equalToSuperview().offset(24)
-            make.top.equalTo(safeAreaLayoutGuide.snp.top).offset(24)
+            make.top.equalTo(safeAreaLayoutGuide.snp.top)
             make.size.equalTo(52)
         }
         
@@ -80,8 +80,8 @@ class CorrectAnswerView: UIView {
         
         labelContainer.snp.makeConstraints { make in
             make.left.right.equalToSuperview().inset(16)
-            make.bottom.equalTo(btnGo.snp.top).offset(-16)
-            labelContainerHeightConstraint = make.height.equalTo(168).constraint
+            make.bottom.equalTo(btnGo.snp.top).offset(-16.autoSize)
+            labelContainerHeightConstraint = make.height.equalTo(168.autoSize).constraint
         }
         
         contentLabel.snp.makeConstraints { make in

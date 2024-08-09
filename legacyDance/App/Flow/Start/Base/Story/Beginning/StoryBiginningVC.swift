@@ -53,11 +53,11 @@ class StoryBiginningVC: UIViewController {
         contentView.backgrounds.image = imageArray[countText]
         switch countText {
                case 0:
-                   contentView.labelContainerHeightConstraint?.update(offset: 276)
+                   contentView.labelContainerHeightConstraint?.update(offset: 276.autoSize)
                case 1:
-                   contentView.labelContainerHeightConstraint?.update(offset: 298)
+                   contentView.labelContainerHeightConstraint?.update(offset: 298.autoSize)
                case 2:
-                   contentView.labelContainerHeightConstraint?.update(offset: 254)
+                   contentView.labelContainerHeightConstraint?.update(offset: 254.autoSize)
                default:
                    break
                }

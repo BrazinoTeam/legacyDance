@@ -29,7 +29,7 @@ class TrialOfDoubtView: UIView {
     }()
     
     private (set) var contentLabel: UILabel = {
-        let label = UILabel.createLabel(withText: "   The second trial was to overcome doubt. Zheng found himself on a narrow path above a chasm, where every step could be his last. He needed to trust in his abilities and move forward.", font: .customFont(font: .ubuntuMono, style: .regular, size: 16), textColor: .white, paragraphSpacing: 1, lineHeightMultiple: 1.4, kern: 0.64)
+        let label = UILabel.createLabel(withText: "   The second trial was to overcome doubt. Zheng found himself on a narrow path above a chasm, where every step could be his last. He needed to trust in his abilities and move forward.", font: .customFont(font: .ubuntuMono, style: .regular, size: Int(16.autoSize)), textColor: .white, paragraphSpacing: 1, lineHeightMultiple: 1.4, kern: 0.64)
         return label
     }()
     
@@ -79,7 +79,7 @@ class TrialOfDoubtView: UIView {
         
         btnBack.snp.makeConstraints { make in
             make.left.equalToSuperview().offset(24)
-            make.top.equalTo(safeAreaLayoutGuide.snp.top).offset(24)
+            make.top.equalTo(safeAreaLayoutGuide.snp.top)
             make.size.equalTo(52)
         }
         
@@ -97,8 +97,8 @@ class TrialOfDoubtView: UIView {
         
         labelContainer.snp.makeConstraints { make in
             make.left.right.equalToSuperview().inset(16)
-            make.bottom.equalTo(btnSlowly.snp.top).offset(-16)
-            labelContainerHeightConstraint = make.height.equalTo(164).constraint
+            make.bottom.equalTo(btnSlowly.snp.top).offset(-16.autoSize)
+            labelContainerHeightConstraint = make.height.equalTo(164.autoSize).constraint
         }
         
         contentLabel.snp.makeConstraints { make in

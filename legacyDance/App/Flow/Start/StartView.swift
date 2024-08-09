@@ -10,10 +10,11 @@ import SnapKit
 class StartView: UIView {
     
     
-    private (set) var bgImage: UIView = {
-        let view = UIView()
-        view.backgroundColor = .green
-        return view
+    private (set) var bgImage: UIImageView = {
+        let imv = UIImageView()
+        imv.image = .bgHome
+        imv.contentMode = .scaleToFill
+        return imv
     }()
     
     private (set) var loadView: UIView = {

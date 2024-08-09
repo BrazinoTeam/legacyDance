@@ -8,43 +8,46 @@ import SnapKit
 
 class BaseView: UIView {
     
-    
-    private (set) var backgrounds: UIView = {
-        let view = UIView()
-        view.backgroundColor = .orange
-        return view
+    private (set) var backgrounds: UIImageView = {
+        let imv = UIImageView()
+        imv.image = .bgHome
+        imv.contentMode = .scaleToFill
+        return imv
     }()
     
     private (set) var btnProfile: UIButton = {
         let btn = UIButton()
-        btn.backgroundColor = .black
-        btn.setTitle("P", for: .normal)
-        btn.setTitleColor(.white, for: .normal)
+        btn.setBackgroundImage(.btnProfile, for: .normal)
         return btn
     }()
     
     private (set) var userImage: UIImageView = {
         let imv = UIImageView()
         imv.contentMode = .scaleToFill
-        imv.backgroundColor = .orange
         imv.image  = .imgUserDef
+        imv.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.6).cgColor
+        imv.layer.shadowOpacity = 1
+        imv.layer.shadowRadius = 8
+        imv.layer.shadowOffset = CGSize(width: 0, height: 4)
         return imv
     }()
     
     private (set) var userName: UILabel = {
         let label = UILabel()
         label.text = "\(Memory.shared.userName ?? "Welcome, User name!")"
-        label.font = UIFont.boldSystemFont(ofSize: 20)
-        label.textColor = .black
+        label.font = .customFont(font: .mac, style: .regular, size: 32)
+        label.textColor = .cYellow
         label.textAlignment = .center
         return label
     }()
     
     private (set) var btnStart: UIButton = {
         let btn = UIButton()
-        btn.backgroundColor = .black
-        btn.setTitle("Go to Story", for: .normal)
-        btn.setTitleColor(.white, for: .normal)
+        btn.configureButton(withTitle: "Go to Story", font: .customFont(font: .mac, style: .regular, size: 20), titleColor: .cDarkRed, normalImage: .imgBtnSelect, highlightedImage: nil)
+        btn.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.6).cgColor
+        btn.layer.shadowOpacity = 1
+        btn.layer.shadowRadius = 8
+        btn.layer.shadowOffset = CGSize(width: 0, height: 8)
         return btn
     }()
     
@@ -70,9 +73,9 @@ class BaseView: UIView {
         }
         
         btnProfile.snp.makeConstraints { make in
-            make.top.equalTo(safeAreaLayoutGuide.snp.top).offset(24)
+            make.top.equalTo(safeAreaLayoutGuide.snp.top)
             make.right.equalToSuperview().offset(-24)
-            make.size.equalTo(48)
+            make.size.equalTo(52)
         }
         
         btnStart.snp.makeConstraints { make in

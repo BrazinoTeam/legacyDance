@@ -12,23 +12,30 @@ class AchivCell: UITableViewCell {
 
     private(set) lazy var leadView: UIView = {
         let view = UIView()
-        view.backgroundColor = .green
+        view.backgroundColor = .cDarkRed
         view.layer.cornerRadius = 8
+        view.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.6).cgColor
+        view.layer.shadowOpacity = 1
+        view.layer.shadowRadius = 8
+        view.layer.shadowOffset = CGSize(width: 0, height: 4)
         return view
     }()
     
     private(set) lazy var achivImage: UIImageView = {
         let iv = UIImageView()
-        iv.contentMode = .scaleToFill
+        iv.layer.shadowColor = UIColor(red: 1, green: 0.66, blue: 0, alpha: 0.6).cgColor
+        iv.layer.shadowOpacity = 1
+        iv.layer.shadowRadius = 16
+        iv.layer.shadowOffset = CGSize(width: 0, height: 0)
         return iv
     }()
     
     private(set) lazy var titleLabel: UILabel = {
         let label = UILabel()
-        label.textColor = .white
+        label.textColor = .cYellow
         label.textAlignment = .left
         label.numberOfLines = 0
-        label.font = UIFont.boldSystemFont(ofSize: 24)
+        label.font = .customFont(font: .mac, style: .regular, size: 24)
         return label
     }()
     
@@ -37,7 +44,7 @@ class AchivCell: UITableViewCell {
         label.textColor = .white
         label.textAlignment = .left
         label.numberOfLines = 0
-        label.font = UIFont.systemFont(ofSize: 14, weight: .regular)
+        label.font = .customFont(font: .ubuntuMono, style: .regular, size: 16)
         return label
     }()
     
@@ -63,22 +70,24 @@ class AchivCell: UITableViewCell {
     
     override func prepareForReuse() {
         super.prepareForReuse()
+        achivImage.image = nil
         titleLabel.text = nil
         subTitleLabel.text =  nil
-        achivImage.image = nil
     }
     
     private func setUpConstraints(){
         
         leadView.snp.makeConstraints { (make) in
-            make.top.equalToSuperview().offset(8)
+            make.top.equalToSuperview().offset(12)
             make.left.right.bottom.equalToSuperview()
-            make.height.equalTo(100.autoSize)
+            make.height.equalTo(104.autoSize)
         }
 
         achivImage.snp.makeConstraints { (make) in
-            make.left.top.bottom.equalToSuperview().inset(8)
-            make.size.equalTo(88)
+            make.centerY.equalToSuperview()
+            make.left.equalToSuperview().offset(20)
+            make.width.equalTo(90)
+            make.height.equalTo(88)
         }
         
         titleLabel.snp.makeConstraints { (make) in

@@ -10,8 +10,8 @@ class AchivHeader: UIView {
     private let titleLabel: UILabel = {
         let label = UILabel()
         label.text = "Achievements"
-        label.textColor = .white
-        label.font = UIFont.boldSystemFont(ofSize: 24) // Ваш шрифт
+        label.textColor = .cYellow
+        label.font = .customFont(font: .mac, style: .regular, size: 48)
         label.textAlignment = .center
         return label
     }()

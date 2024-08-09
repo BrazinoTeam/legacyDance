@@ -1,8 +1,19 @@
 {
   "images" : [
     {
-      "filename" : "Frame 9.pdf",
-      "idiom" : "universal"
+      "filename" : "Edit.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "Edit (1).png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "Edit (2).png",
+      "idiom" : "universal",
+      "scale" : "3x"
     }
   ],
   "info" : {

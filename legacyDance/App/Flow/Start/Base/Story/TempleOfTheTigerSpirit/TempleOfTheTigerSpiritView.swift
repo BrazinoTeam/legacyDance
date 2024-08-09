@@ -46,7 +46,7 @@ class TempleOfTheTigerSpiritView: UIView {
     }()
     
     private (set) var contentLabel: UILabel = {
-        let label = UILabel.createLabel(withText: "In moder", font: .customFont(font: .ubuntuMono, style: .regular, size: 16), textColor: .white, paragraphSpacing: 1, lineHeightMultiple: 1.4, kern: 0.64)
+        let label = UILabel.createLabel(withText: "In moder", font: .customFont(font: .ubuntuMono, style: .regular, size: Int(16.autoSize)), textColor: .white, paragraphSpacing: 1, lineHeightMultiple: 1.4, kern: 0.64)
         return label
     }()
     
@@ -131,7 +131,7 @@ class TempleOfTheTigerSpiritView: UIView {
         
         btnBack.snp.makeConstraints { make in
             make.left.equalToSuperview().offset(24)
-            make.top.equalTo(safeAreaLayoutGuide.snp.top).offset(24)
+            make.top.equalTo(safeAreaLayoutGuide.snp.top)
             make.size.equalTo(52)
         }
         
@@ -143,8 +143,8 @@ class TempleOfTheTigerSpiritView: UIView {
         
         labelContainer.snp.makeConstraints { make in
             make.left.right.equalToSuperview().inset(16)
-            make.bottom.equalTo(btnSpin.snp.top).offset(-16)
-            labelContainerHeightConstraint = make.height.equalTo(276).constraint
+            make.bottom.equalTo(btnSpin.snp.top).offset(-16.autoSize)
+            labelContainerHeightConstraint = make.height.equalTo(276.autoSize).constraint
         }
         
         numberLabel.snp.makeConstraints { make in
@@ -170,12 +170,14 @@ class TempleOfTheTigerSpiritView: UIView {
         imgContSpin.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
             make.centerY.equalToSuperview().offset(-60)
+            make.width.equalTo(362.autoSize)
+            make.height.equalTo(340.autoSize)
         }
         
         circleContainer.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
             make.centerY.equalToSuperview().offset(-60)
-            make.size.equalTo(275)
+            make.size.equalTo(275.autoSize)
         }
         
         imgSpin.snp.makeConstraints { make in
@@ -184,16 +186,18 @@ class TempleOfTheTigerSpiritView: UIView {
         
         imgCenterSpin.snp.makeConstraints { make in
             make.center.equalTo(imgSpin)
+            make.size.equalTo(70.autoSize)
         }
         
         imgTopSpin.snp.makeConstraints { make in
             make.left.right.top.equalTo(imgContSpin)
-            make.height.equalTo(107)
+            make.height.equalTo(107.autoSize)
         }
         
         imgPointer.snp.makeConstraints { make in
             make.centerX.equalTo(imgSpin)
             make.centerY.equalTo(imgSpin.snp.bottom)
+            make.size.equalTo(66.autoSize)
         }
     }
     

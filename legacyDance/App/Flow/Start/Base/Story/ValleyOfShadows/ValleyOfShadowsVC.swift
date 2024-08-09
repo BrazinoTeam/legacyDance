@@ -53,9 +53,9 @@ class ValleyOfShadowsVC: UIViewController {
         contentView.backgrounds.image = imageArray[countText]
         switch countText {
                case 0:
-                   contentView.labelContainerHeightConstraint?.update(offset: 166)
+                   contentView.labelContainerHeightConstraint?.update(offset: 166.autoSize)
                case 1:
-                   contentView.labelContainerHeightConstraint?.update(offset: 188)
+                   contentView.labelContainerHeightConstraint?.update(offset: 188.autoSize)
                default:
                    break
                }

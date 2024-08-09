@@ -7,18 +7,16 @@ import SnapKit
 
 class ProfileView: UIView, UITextFieldDelegate{
     
-    
-    private (set) var backgrounds: UIView = {
-        let view = UIView()
-        view.backgroundColor = .purple
-        return view
+    private (set) var backgrounds: UIImageView = {
+        let imv = UIImageView()
+        imv.image = .bgProfile
+        imv.contentMode = .scaleToFill
+        return imv
     }()
     
     private (set) var btnBack: UIButton = {
         let btn = UIButton()
-        btn.backgroundColor = .red
-        btn.setTitle("B", for: .normal)
-        btn.setTitleColor(.white, for: .normal)
+        btn.setBackgroundImage(.btnBack, for: .normal)
         return btn
     }()
     
@@ -49,14 +47,27 @@ class ProfileView: UIView, UITextFieldDelegate{
     private (set) var nameView: UIView = {
         let view = UIView()
         view.backgroundColor = .white.withAlphaComponent(0.3)
-        view.layer.cornerRadius = 20.autoSize
+        view.layer.cornerRadius = 8
+        view.layer.borderColor = UIColor.cYellow.cgColor
+        view.layer.borderWidth = 1
+        view.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.6).cgColor
+        view.layer.shadowOpacity = 1
+        view.layer.shadowRadius = 8
+        view.layer.shadowOffset = CGSize(width: 0, height: 4)
         return view
+    }()
+    
+    private (set) var bgNameView: UIImageView = {
+        let imv = UIImageView()
+        imv.image = .imgContNameView
+        imv.contentMode = .scaleToFill
+        return imv
     }()
     
     private(set) lazy var profileTextField: UITextField = {
         let textField = UITextField()
-        let font = UIFont.boldSystemFont(ofSize: 16)
-        let fontSize = CGFloat(16)
+        let font = UIFont.customFont(font: .mac, style: .regular, size: 32)
+        let fontSize = CGFloat(32)
         
         // Атрибуты для placeholder
         let placeholderAttributes: [NSAttributedString.Key: Any] = [
@@ -73,7 +84,7 @@ class ProfileView: UIView, UITextFieldDelegate{
             .font: font,
             .foregroundColor: UIColor.white,
         ]
-        textField.font = UIFont.boldSystemFont(ofSize: 18)
+        textField.font = UIFont.customFont(font: .mac, style: .regular, size: 32)
         textField.textColor = .white
         textField.backgroundColor = .clear
         textField.textAlignment = .center
@@ -84,7 +95,7 @@ class ProfileView: UIView, UITextFieldDelegate{
     
     private(set) lazy var achivTableView: UITableView = {
         let tableView = UITableView(frame: .zero, style: .grouped)
-        tableView.backgroundColor = .blue
+        tableView.backgroundColor = .clear
         tableView.showsVerticalScrollIndicator = false
         tableView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 20, right: 0)
         tableView.register(AchivCell.self, forCellReuseIdentifier: AchivCell.reuseId)
@@ -111,38 +122,38 @@ class ProfileView: UIView, UITextFieldDelegate{
     
     private func setupUI() {
         
-        [backgrounds, btnBack, btnRateUs, btnWriteUS, btnInfo, btnUserPhoto, nameView, achivTableView] .forEach(addSubview(_:))
+        [backgrounds, btnBack, btnRateUs, btnWriteUS, btnInfo, btnUserPhoto, nameView, editBtn, achivTableView] .forEach(addSubview(_:))
+        nameView.addSubview(bgNameView)
         nameView.addSubview(profileTextField)
-        nameView.addSubview(editBtn)
-
     }
     
     private func setupConstraints() {
+        
         backgrounds.snp.makeConstraints { make in
             make.edges.equalToSuperview()
         }
         
         btnBack.snp.makeConstraints { make in
             make.left.equalToSuperview().offset(24)
-            make.top.equalTo(safeAreaLayoutGuide.snp.top).offset(24)
+            make.top.equalTo(safeAreaLayoutGuide.snp.top)
             make.size.equalTo(52)
         }
         
         btnRateUs.snp.makeConstraints { make in
             make.centerX.equalToSuperview().offset(52)
-            make.top.equalTo(safeAreaLayoutGuide.snp.top).offset(24)
+            make.top.equalTo(safeAreaLayoutGuide.snp.top)
             make.size.equalTo(52)
         }
         
         btnWriteUS.snp.makeConstraints { make in
             make.centerX.equalToSuperview().offset(-52)
-            make.top.equalTo(safeAreaLayoutGuide.snp.top).offset(24)
+            make.top.equalTo(safeAreaLayoutGuide.snp.top)
             make.size.equalTo(52)
         }
         
         btnInfo.snp.makeConstraints { make in
             make.right.equalToSuperview().offset(-24)
-            make.top.equalTo(safeAreaLayoutGuide.snp.top).offset(24)
+            make.top.equalTo(safeAreaLayoutGuide.snp.top)
             make.size.equalTo(52)
         }
         
@@ -158,14 +169,18 @@ class ProfileView: UIView, UITextFieldDelegate{
             make.height.equalTo(64)
         }
         
+        bgNameView.snp.makeConstraints { make in
+            make.edges.equalToSuperview()
+        }
+        
         profileTextField.snp.makeConstraints { make in
             make.centerY.equalToSuperview()
             make.left.right.equalToSuperview().inset(48)
         }
         
         editBtn.snp.makeConstraints { make in
-            make.centerY.equalToSuperview()
-            make.right.equalToSuperview().offset(-6)
+            make.centerY.equalTo(nameView)
+            make.right.equalTo(nameView.snp.right).offset(-6)
         }
         
         achivTableView.snp.makeConstraints { make in
